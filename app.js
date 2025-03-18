@@ -8,15 +8,15 @@ let amigo = [];
 function nombreAmigos(){
     let ingresoAmigo = document.getElementById("amigo");
     let nombreAmigo = ingresoAmigo.value;
-
+    
     console.log(nombreAmigo);
 
     if (nombreAmigo === "") {
-//entregar un aviso en caso de  o ingresar datos
+//entregar un aviso en caso de  no ingresar datos
     alert("Debes digitar un nombre");
     return;
     }
-    amigo.push(nombreAmigo);
+    amigo.push(nombreAmigo); //permite ingreso de nombres a la lista
    ingresoAmigo.value = "";
    registroDeAmigos();
 
@@ -35,16 +35,16 @@ function registroDeAmigos(){
 }
  
 }
-
+//funcion sorteo
 function sortearAmigo() {
-    if (amigo.length === 0) {
+    if (amigo.length === 0) { //cantidad minima de ingreso
     alert("No hay suficientes amigos para sortear");
     return;
     }
     let amigoElegido = amigo[Math.floor(Math.random() * amigo.length)];
     let resultado = document.getElementById("resultado");
     resultado.innerHTML= `El amigo secreto elegido es : ${amigoElegido}`;
-
+//permite limpiar la lista
     let limpiarRegistro = document.getElementById("listaAmigos");
     limpiarRegistro.innerHTML="";
 }
