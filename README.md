@@ -40,4 +40,8 @@
 
 
 `<link>` : <https://github.com>
+Capturas del proceso de desarrollo en Vscode.
 
+![Image](https://github.com/user-attachments/assets/512f1072-91ac-4eb3-bd7e-8f44bc998a23)
+
+![Image](https://github.com/user-attachments/assets/0124b365-0485-46a9-8275-9c933ba5ed6d)
